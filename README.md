@@ -2,14 +2,15 @@
 
 公開預覽：https://nickufo.github.io/meiman-sunlight/
 
-原生 HTML / CSS / JavaScript 靜態網站，無建置步驟、外部依賴或追蹤。
-包含七個照片故事熱點、手動啟動的原創 Web Audio 背景音樂，以及已可播放的 30 秒午間映像與獨立預留的小遊戲位置。
+原生 HTML / CSS / JavaScript 靜態網站，無建置步驟或追蹤。七個照片故事、手動開啟的原創 Web Audio 音樂、30 秒午間映像。
+
+## 雙遊戲入口
+- 02 / 貓咪解謎：https://sylvia880222.github.io/italian-doku/?v=cat3d
+- 03 / 餐廳大作戰：https://arnoldchiou.github.io/bistro-bloom/
+
+均為同分頁原生連結，點一次直達原站，沒有介紹彈窗；瀏覽器返回可回到小屋。餐廳大作戰原站需 WASD／E 鍵盤，目前沒有觸控操作，入口已標明「需鍵盤」。沒有修改或複製第三方專案。離站暫停音樂，返回尊重原先狀態（重新載入時預設靜音）。
 
 ## 編輯與發布
-- `content.js`：故事文案、照片、熱點座標、影片與遊戲設定。
-- `style.css`：桌機與手機版面。
-- `app.js`：互動、鍵盤操作與音樂。
-- `assets/`：網站使用照片；照片權利仍屬原權利人。
+content.js 管理故事、照片與媒體資料；外部遊戲網址與 index.html 原生連結同步。style.css 管理響應式版面，app.js 管理互動與音樂。CSS / JS 使用版本 query。GitHub Pages 從 main 根目錄發布。
 
-GitHub Pages 使用 `main` 分支根目錄發布；推送更新後會自動部署。
-照片中的菜單僅記錄當時內容，請以現場供應為準。午間映像使用使用者提供的 H.264 / AAC 1080×1920 影片，以不重新壓縮的 faststart 副本播放；原始檔保留。原生控制列、行動裝置 inline 播放、不自動播放、完整顯示不裁切。播放影片時背景 Web Audio 完全暫停；暫停、結束或關閉時恢復先前的音樂選擇，不覆蓋使用者靜音。小遊戲仍為預留位置。
+午間映像保留柔和過場版本 noon-soft-transitions-20261113-v2.mp4，以 faststart 無重新壓縮副本播放；原生控制列、inline、不自動播放、不裁切。影片播放暫停背景音樂，關閉還原原先選擇。照片權利屬原權利人，菜單以現場為準。

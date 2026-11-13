@@ -29,3 +29,9 @@ dialog[data-mode=video] video{display:block;object-fit:contain;max-width:100%;ma
 .future>a small{color:#626b3d;font-weight:600}
 
 .no-script{pointer-events:none;bottom:auto;top:70px;font-size:11px}
+
+/* Two equally visible native games; no intermediate dialog. */
+.future{gap:clamp(12px,2vw,28px);align-items:center}.future button{min-height:44px}.future>a{min-width:112px}
+@media(max-width:760px){.page{grid-template-rows:74px minmax(0,1fr) 114px}footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;gap:7px}.future{grid-column:1/-1;display:grid;grid-template-columns:.85fr 1fr 1.25fr;gap:8px}.future>a{min-width:0;padding:7px 8px}.future button,.future>a{font-size:10px;letter-spacing:0;white-space:nowrap}.future small{font-size:8px;letter-spacing:0;margin-top:6px}footer>a{grid-column:2;min-height:44px;display:flex;align-items:center}}
+@media(max-height:680px) and (max-width:760px){.page{grid-template-rows:62px minmax(0,1fr) 108px}}
+@media(max-height:400px) and (max-width:760px){.page{grid-template-rows:48px minmax(0,1fr) 52px;gap:4px;padding:0 16px}footer{display:flex;gap:10px}.future{flex:1;gap:6px}footer>a{font-size:9px}.future button,.future>a{font-size:9px}.future>a{padding:6px}.future small{font-size:7px}}
