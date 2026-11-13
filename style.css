@@ -23,3 +23,8 @@ dialog[data-mode=video] video{display:block;object-fit:contain;max-width:100%;ma
  dialog[data-mode=video] h2{font-size:20px;margin:8px 0}
  dialog[data-mode=video] p{font-size:11px;line-height:1.7}
 }
+
+/* Keep the external game independent; its audio never shares this modal. */
+.story-copy .game-launch{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border:1px solid var(--olive);border-radius:3px;background:#e5e9d6;font-size:12px;line-height:1.6}
+.story-copy .game-launch:hover{background:#dce2c8}
+@media(max-height:500px){dialog[data-mode=game] .story-card{height:88svh;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr)}dialog[data-mode=game] .story-image{height:100%;min-height:0}dialog[data-mode=game] .story-copy{padding:40px 20px 16px}dialog[data-mode=game] h2{font-size:20px;margin:8px 0}dialog[data-mode=game] p{font-size:11px;line-height:1.7}}
