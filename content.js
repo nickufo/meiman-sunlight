@@ -9,8 +9,8 @@ window.SUNLIGHT_CONTENT = {
     { id:'texture',x:75,y:57,label:'屋牆｜日常的紋理',image:'assets/texture.jpg',alt:'屋牆的材質與細節',kicker:'06 / THE QUIET DETAILS',title:'細節裡，有生活的溫度。',text:'粗樸的牆面、沉靜的色澤，都是這間屋子的表情。不必修飾得太滿，日光會替它添上一筆。'},
     { id:'tree',x:18,y:17,label:'樹梢｜把視線往上',image:'assets/together.jpg',alt:'夥伴們在綠樹下向鏡頭微笑',kicker:'07 / LOOK UP TOGETHER',title:'樹影之下，我們一起。',text:'偶爾把視線往上，會看見枝葉，也會看見彼此的笑。謝謝一起吃飯、一起記錄這個午間的夥伴。',gallery:[{image:'assets/tree.jpg',label:'再看一眼樹梢',alt:'從下往上看的綠樹與日光'},{image:'assets/exterior.jpg',label:'看看屋子的另一面',alt:'美滿日光外觀的另一個角度'}]}
   ],
-  // Independent media slots: local video and an external game opened in a new tab.
-  video:{src:'assets/noon-memories.mp4',poster:'assets/noon-memories-poster.jpg',title:'把午間，拍成一段回憶。',text:'把一起吃飯的日常，收藏成 30 秒的回憶。按下播放，讓這個午間再暖一次。'},
-  // External game stays on its original site; script remains available for a future local game.
-  game:{url:'https://sylvia880222.github.io/italian-doku/?v=cat3d',script:null,title:'留一點日光，陪貓咪玩。',text:'陪貓咪解開小謎題，慢慢走過每一關。遊戲另開分頁；回來關閉這張卡片，就能繼續聽日光。'}
+  // Independent media slots: local video and an external game reached by native same-tab navigation.
+  video:{src:'assets/noon-soft-transitions-20261113-v2.mp4',poster:'assets/noon-soft-transitions-20261113-v2-poster.jpg',title:'把午間，拍成一段回憶。',text:'把一起吃飯的日常，收藏成 30 秒的回憶。按下播放，讓這個午間再暖一次。'},
+  // External game stays on its original site; the native href in index.html is kept in sync with this URL.
+  game:{url:'https://sylvia880222.github.io/italian-doku/?v=cat3d',script:null,title:'留一點日光，陪貓咪玩。',text:'陪貓咪解開小謎題，慢慢走過每一關。點「開始遊戲」直接前往，按瀏覽器返回即可回到小屋。'}
 };
