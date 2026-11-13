@@ -10,7 +10,7 @@ window.SUNLIGHT_CONTENT = {
     { id:'tree',x:18,y:17,label:'樹梢｜把視線往上',image:'assets/together.jpg',alt:'夥伴們在綠樹下向鏡頭微笑',kicker:'07 / LOOK UP TOGETHER',title:'樹影之下，我們一起。',text:'偶爾把視線往上，會看見枝葉，也會看見彼此的笑。謝謝一起吃飯、一起記錄這個午間的夥伴。',gallery:[{image:'assets/tree.jpg',label:'再看一眼樹梢',alt:'從下往上看的綠樹與日光'},{image:'assets/exterior.jpg',label:'看看屋子的另一面',alt:'美滿日光外觀的另一個角度'}]}
   ],
   // Separate future slots. Set local relative paths; no external embeds required.
-  video:{src:null,poster:'assets/together.jpg',title:'把午間，拍成一段回憶。',text:'夥伴的影片，將在這裡與你見面。先留一個位置，給那些還沒說完的日常。'},
+  video:{src:'assets/noon-memories.mp4',poster:'assets/noon-memories-poster.jpg',title:'把午間，拍成一段回憶。',text:'把一起吃飯的日常，收藏成 30 秒的回憶。按下播放，讓這個午間再暖一次。'},
   // Game entry must export window.SunlightGame.mount(container) => optional cleanup function.
   game:{script:null,title:'留一點日光，給好玩的事。',text:'小遊戲正在準備中。之後不必離開這間屋子，也能與日光玩一會兒。'}
 };

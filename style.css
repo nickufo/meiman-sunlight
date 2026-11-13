@@ -6,3 +6,20 @@
 @media(max-width:760px){.story-card{height:auto;grid-template-rows:minmax(0,auto) auto}.story-image{height:min(45svh,calc((100vw - 28px)*.75));min-height:0}.story-image img,.story-image video{height:100%}.story-copy{min-height:0}}
 @media(max-height:500px) and (min-width:761px){dialog[data-mode=index] .story-copy{padding:25px 24px 16px}dialog[data-mode=index] h2{font-size:21px;margin:7px 0}dialog[data-mode=index] p{font-size:11px;line-height:1.7}dialog[data-mode=index] .index-list{gap:5px;margin-top:9px}dialog[data-mode=index] .index-list button{font-size:10px;padding:6px;min-height:28px}}
 @media(min-width:761px) and (max-width:1000px) and (orientation:portrait){main{display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:28px}.intro{height:auto;flex:none}.intro h1{font-size:40px;margin:12px 0}.intro h1 br,.intro p br{display:none}.instruction,.intro-bottom{display:none}.intro p{font-size:12px}.scene-area{height:auto;flex:none;grid-template-rows:25px auto 30px}.scene-frame{aspect-ratio:4/3;background:transparent}}
+
+/* Portrait film stays fully visible, with native controls and no page scrolling. */
+dialog[data-mode=video] .story-image{background:#20251d}
+dialog[data-mode=video] video{display:block;object-fit:contain;max-width:100%;max-height:100%}
+@media(max-width:760px) and (min-height:501px){
+ dialog[data-mode=video] .story-card{height:90svh;grid-template-rows:minmax(0,1fr) auto}
+ dialog[data-mode=video] .story-image{height:100%;min-height:0}
+ dialog[data-mode=video] .story-copy{padding:14px 22px 18px}
+ dialog[data-mode=video] .story-copy h2{font-size:22px;margin:6px 0}
+}
+@media(max-height:500px){
+ dialog[data-mode=video] .story-card{height:88svh;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr)}
+ dialog[data-mode=video] .story-image{height:100%;min-height:0}
+ dialog[data-mode=video] .story-copy{padding:40px 20px 16px}
+ dialog[data-mode=video] h2{font-size:20px;margin:8px 0}
+ dialog[data-mode=video] p{font-size:11px;line-height:1.7}
+}
